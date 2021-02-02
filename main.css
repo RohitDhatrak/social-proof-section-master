@@ -1,0 +1,203 @@
+:root {
+    --primary-colour: #502050;
+    --secondary-colour: hsl(303, 10%, 53%);
+    --colour1: #ee68a4;
+    --colour2: #f7f2f7;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    font-family: "Spartan", sans-serif;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.top {
+    display: flex;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 3%;
+}
+
+.text {
+    width: 100%;
+}
+
+.text > h1 {
+    color: var(--primary-colour);
+    font-size: 3em;
+    max-width: 80%;
+}
+
+.text > p {
+    color: var(--secondary-colour);
+    max-width: 80%;
+}
+
+.bottom {
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.ratings {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2em 0;
+}
+
+.rating-card {
+    background-color: var(--colour2);
+    width: 16em;
+    font-size: 1.5em;
+    border-radius: 0.3em;
+    padding: 0.5em 1em;
+}
+
+.stars {
+    display: inline;
+}
+
+.rating-card > h6 {
+    display: inline;
+    margin-left: 1.5em;
+}
+
+.rating-card-2 {
+    margin-left: 2em;
+}
+
+.rating-card-3 {
+    margin-left: 4em;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4em;
+}
+
+.card {
+    background-color: var(--primary-colour);
+    color: #fff;
+    width: 20em;
+    height: 10em;
+    margin: 1em;
+    padding: 1.5em 2em;
+    border-radius: 0.5em;
+}
+
+.card2 {
+    margin-top: 2em;
+}
+
+.card3 {
+    margin-top: 3em;
+}
+
+.name-img {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.name-img > div {
+    display: inline-flex wrap;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 3em;
+    display: inline;
+}
+
+.name {
+    display: inline;
+    margin: 0 1em;
+    font-size: 0.9rem;
+}
+
+.buyer {
+    margin: 0.2em 1.2em;
+    font-size: 0.8rem;
+    font-weight: 100;
+    color: var(--colour1);
+}
+
+.review {
+    margin-bottom: 0;
+}
+
+@media (max-width: 1024px) {
+    .top {
+        flex-direction: column;
+    }
+    .text > h1 {
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 1em;
+    }
+    .text > p {
+        margin: 0 auto;
+        max-width: 60%;
+    }
+
+    .rating-card-2 {
+        margin-left: 0;
+    }
+
+    .rating-card-3 {
+        margin-left: 0;
+    }
+
+    .rating-card {
+        margin: 0 auto;
+        margin-bottom: 1.3em;
+    }
+
+    .rating-card > h6 {
+        display: block;
+        text-align: center;
+        margin: 0.5em 0;
+    }
+
+    .stars {
+        display: block;
+        text-align: center;
+    }
+
+    .cards {
+        flex-direction: column;
+        margin-top: 1em;
+    }
+
+    .card {
+        max-width: 80%;
+        margin: 0em auto;
+        height: unset;
+        margin-bottom: 2em;
+    }
+
+    .card2 {
+        margin-top: 0em;
+    }
+
+    .card3 {
+        margin-top: 0em;
+    }
+}
+
+@media (max-width: 480px) {
+    .text > h1 {
+        font-size: 2rem;
+    }
+
+    .text > p {
+        max-width: 100%;
+    }
+}
